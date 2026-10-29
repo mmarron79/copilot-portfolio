@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alex's portfolio, selected projects, and contact information.">
+    <title>Alex Styles | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <p>Portfolio</p>
+      <h1>Hi, I'm Alex.</h1>
+      <p>Graphic designer creating thoughtful visual identities and clear, expressive design.</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" data-tooltip="Learn about Alex" title="Learn about Alex">About</a></li>
+          <li><a href="#portfolio" data-tooltip="Explore selected projects" title="Explore selected projects">Portfolio</a></li>
+          <li><a href="#contact" data-tooltip="Get in touch" title="Get in touch">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+          I'm Alex Styles, a graphic designer who helps ideas take shape
+          through thoughtful visuals. I bring concepts to life with a focus on
+          clear communication, strong composition, and careful attention to
+          detail.
+        </p>
+        <p>
+          My practice includes visual identity, typography, and editorial and
+          print design. I enjoy finding the right balance of color, type, and
+          imagery to make each project feel distinctive.
+        </p>
+      </section>
+
+      <section id="portfolio" aria-labelledby="portfolio-heading">
+        <h2 id="portfolio-heading">Portfolio</h2>
+        <p>A selection of graphic design work. Choose a project to explore its concept and design details.</p>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-thumbnail" aria-hidden="true">
+              <span>Brand identity</span>
+            </div>
+            <div class="project-copy">
+              <h3>Brand Identity</h3>
+              <p>A visual identity concept for [brand or client], built around [key idea].</p>
+              <a class="project-button" href="#project-one" data-project-target="project-one" aria-haspopup="dialog">View project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumbnail" aria-hidden="true">
+              <span>Editorial design</span>
+            </div>
+            <div class="project-copy">
+              <h3>Editorial Design</h3>
+              <p>A publication design exploring [subject] through type, image, and layout.</p>
+              <a class="project-button" href="#project-two" data-project-target="project-two" aria-haspopup="dialog">View project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumbnail" aria-hidden="true">
+              <span>Packaging design</span>
+            </div>
+            <div class="project-copy">
+              <h3>Packaging Design</h3>
+              <p>Packaging for [product or brand], designed to communicate [key quality].</p>
+              <a class="project-button" href="#project-three" data-project-target="project-three" aria-haspopup="dialog">View project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-details">
+          <article id="project-one">
+            <h3>Brand Identity</h3>
+            <p>[Describe the brand, the design challenge, Alex's role, and how the visual identity communicates the brand's values.]</p>
+          </article>
+          <article id="project-two">
+            <h3>Editorial Design</h3>
+            <p>[Describe the publication, its audience, Alex's role, and how typography and layout support the content.]</p>
+          </article>
+          <article id="project-three">
+            <h3>Packaging Design</h3>
+            <p>[Describe the product, its packaging goals, Alex's role, and the final design approach.]</p>
+          </article>
+        </div>
+
+        <dialog class="project-dialog" aria-labelledby="project-dialog-heading">
+          <div class="project-dialog-header">
+            <h2 id="project-dialog-heading"></h2>
+            <button class="project-dialog-close" type="button" aria-label="Close project details">&times;</button>
+          </div>
+          <p class="project-dialog-description"></p>
+        </dialog>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Have a project in mind? Send me a message.</p>
+        <form action="#" method="post">
+          <label for="name">
+            Your name
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </label>
+          <label for="email">
+            Email address
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </label>
+          <label for="message">
+            Message
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span>2026</span> Alex Styles. All rights reserved.</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
